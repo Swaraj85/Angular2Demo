@@ -12,21 +12,21 @@ export class EmployeeListComponent {
 
     constructor() {
         this.employees = [
-            { code: 'emp01', name: 'Tom', gender: 'Male', annualSalary: 5500, dateOfBirth: '25/01/1985' },
-            { code: 'emp02', name: 'Tom2', gender: 'Male', annualSalary: 5500, dateOfBirth: '25/01/1985' },
-            { code: 'emp03', name: 'Tom3', gender: 'Male', annualSalary: 5500, dateOfBirth: '25/01/1985' },
-            { code: 'emp04', name: 'Tom4', gender: 'Female', annualSalary: 5500, dateOfBirth: '25/01/1985' }
+            { code: 'emp01', name: 'Tom', gender: 'Male', annualSalary: 5500, dateOfBirth: '01/25/1985' },
+            { code: 'emp02', name: 'Tom2', gender: 'Male', annualSalary: 5500, dateOfBirth: '01/25/1985' },
+            { code: 'emp03', name: 'Tom3', gender: 'Male', annualSalary: 5500, dateOfBirth: '01/25/1985' },
+            { code: 'emp04', name: 'Tom4', gender: 'Female', annualSalary: 5500, dateOfBirth: '01/25/1985' }
         ];
     }
 
     getEmployees(): void {
         this.employees = [
-            { code: 'emp01', name: 'Tom', gender: 'Male', annualSalary: 5500, dateOfBirth: '25/01/1985' },
-            { code: 'emp02', name: 'Tom2', gender: 'Male', annualSalary: 5500, dateOfBirth: '25/01/1985' },
-            { code: 'emp03', name: 'Tom3', gender: 'Male', annualSalary: 5500, dateOfBirth: '25/01/1985' },
-            { code: 'emp04', name: 'Tom4', gender: 'Female', annualSalary: 5500, dateOfBirth: '25/01/1985' },
-            { code: 'emp05', name: 'Tom4', gender: 'Female', annualSalary: 5500, dateOfBirth: '25/01/1985' },
-            { code: 'emp06', name: 'Tom4', gender: 'Female', annualSalary: 5500, dateOfBirth: '25/01/1985' }
+            { code: 'emp01', name: 'Tom', gender: 'Male', annualSalary: 5500, dateOfBirth: '01/25/1985' },
+            { code: 'emp02', name: 'Tom2', gender: 'Male', annualSalary: 5500, dateOfBirth: '01/25/1985' },
+            { code: 'emp03', name: 'Tom3', gender: 'Male', annualSalary: 5500, dateOfBirth: '01/25/1985' },
+            { code: 'emp04', name: 'Tom4', gender: 'Female', annualSalary: 5500, dateOfBirth: '01/25/1985' },
+            { code: 'emp05', name: 'Tom4', gender: 'Female', annualSalary: 5500, dateOfBirth: '01/25/1985' },
+            { code: 'emp06', name: 'Tom4', gender: 'Female', annualSalary: 5500, dateOfBirth: '01/25/1985' }
         ];
     }
 

@@ -269,3 +269,5 @@ __pycache__/
 /Angular2Demo/src/app/app.component.js
 /Angular2Demo/src/app/employee/employee.component.js.map
 /Angular2Demo/src/app/employee/employee.component.js
+/Angular2Demo/src/app/employee/employeeList.component.js.map
+/Angular2Demo/src/app/employee/employeeList.component.js

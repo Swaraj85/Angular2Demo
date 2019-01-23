@@ -10,6 +10,8 @@ export class EmployeeListComponent {
 
     employees: any[];
 
+    selectedEmployeeCountRadioButton: string = 'All';
+
     constructor() {
         this.employees = [
             { code: 'emp01', name: 'Tom', gender: 'Male', annualSalary: 5500, dateOfBirth: '01/25/1985' },
@@ -21,15 +23,19 @@ export class EmployeeListComponent {
         ];
     }
 
-    getTotalEmployeesCount(): number{
+    onEmployeeCountRadioButtonChange(selectedRadioButtonValue: string): void {
+        this.selectedEmployeeCountRadioButton = selectedRadioButtonValue;
+    }
+
+    getTotalEmployeesCount(): number {
         return this.employees.length;
     }
 
-    getTotalMaleEmployeesCount(): number{
-        return this.employees.filter(e=>e.gender==='Male').length;
+    getTotalMaleEmployeesCount(): number {
+        return this.employees.filter(e => e.gender === 'Male').length;
     }
 
-    getTotalFemaleEmployeesCount(): number{
-        return this.employees.filter(e=>e.gender==='Female').length;
+    getTotalFemaleEmployeesCount(): number {
+        return this.employees.filter(e => e.gender === 'Female').length;
     }
 }

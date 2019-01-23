@@ -7,8 +7,15 @@
 })
 
 export class EmployeeComponent {
+    columnSpan: number = 2;
     firstName: string = 'Swaraj';
     lastName: string = 'Ghosh';
     gender: string = 'Male';
     age: number = 33;
+
+    showDeatils: boolean= false;
+
+    toggleDetails(): void{
+        this.showDeatils= !this.showDeatils;
+    }
 }

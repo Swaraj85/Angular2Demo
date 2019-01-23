@@ -3,3 +3,16 @@ h1 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 250%;
 }
+
+.boldclass{
+  font-weight: bold;
+}
+
+.italicsclass{
+  font-style: italic
+}
+
+.colorclass{
+  color: red;
+  width: 100px;
+}

@@ -1,16 +1,33 @@
 ﻿<table>
-    <tr>
-        <td>First Name</td>
-        <td>{{firstName}}</td>
-    </tr>
+    <thead>
+        <tr>
+            <th attr.colspan={{columnSpan}}>
+                Employee Details
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>First Name</td>
+            <td>{{firstName}}</td>
+        </tr>
 
-    <tr>
-        <td>Last Name</td>
-        <td>{{lastName}}</td>
-    </tr>
+        <tr>
+            <td>Last Name</td>
+            <td>{{lastName}}</td>
+        </tr>
 
-    <tr>
-        <td>Gender</td>
-        <td>{{gender}}</td>
-    </tr>
+        <tr *ngIf='showDeatils'>
+            <td>Gender</td>
+            <td>{{gender}}</td>
+        </tr>
+
+        <tr *ngIf='showDeatils'>
+            <td>Age</td>
+            <td>{{age}}</td>
+        </tr>
+    </tbody>
+
 </table>
+<br/>
+<button (click)='toggleDetails()'>{{showDeatils ? 'Hide': 'Show'}} Details</button>

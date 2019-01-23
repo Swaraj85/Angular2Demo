@@ -1,4 +1,9 @@
-﻿<table>
+﻿<employee-count [all]="getTotalEmployeesCount()"
+                [male]="getTotalMaleEmployeesCount()"
+                [female]="getTotalFemaleEmployeesCount()">
+            </employee-count>
+<br/><br/>
+<table>
     <thead>
         <tr>
             <th>Code</th>

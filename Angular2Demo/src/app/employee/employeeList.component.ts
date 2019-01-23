@@ -20,4 +20,16 @@ export class EmployeeListComponent {
             { code: 'emp06', name: 'Tom4', gender: 'Female', annualSalary: 5500, dateOfBirth: '01/25/1985' }
         ];
     }
+
+    getTotalEmployeesCount(): number{
+        return this.employees.length;
+    }
+
+    getTotalMaleEmployeesCount(): number{
+        return this.employees.filter(e=>e.gender==='Male').length;
+    }
+
+    getTotalFemaleEmployeesCount(): number{
+        return this.employees.filter(e=>e.gender==='Female').length;
+    }
 }

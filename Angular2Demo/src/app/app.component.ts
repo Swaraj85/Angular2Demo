@@ -7,6 +7,8 @@ import { Component } from "@angular/core"
           <br/>
           <br/>
           <simple [simpleInput]='userText'></simple>
+          <br/>
+          <list-employee></list-employee>
                   `
 })
 

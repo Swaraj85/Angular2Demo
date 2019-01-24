@@ -3,12 +3,14 @@ import { Component } from "@angular/core"
 @Component({
   selector: 'my-app',
   template:         `
-          Your Text: <input type='text' [(ngModel)]='userText'/>
-          <br/>
-          <br/>
-          <simple [simpleInput]='userText'></simple>
-          <br/>
-          <list-employee></list-employee>
+          <div style="padding:5px">
+            <ul class="nav nav-tabs">
+              <li routerLinkActive='active'><a routerLink='home'>Home</a></li>
+              <li routerLinkActive='active'><a routerLink='employees'>Employee</a></li>
+              
+            </ul>
+            <router-outlet></router-outlet>
+          <div>
                   `
 })
 
